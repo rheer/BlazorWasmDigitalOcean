@@ -1,1 +1,6 @@
-test
+FROM mcr.microsoft.com/dotnet/sdk:5.0
+WORKDIR /app
+COPY BlazorWasmDigitalOcean.csproj BlazorWasmDigitalOcean.csproj
+RUN dotnet restore BlazorWasmDigitalOcean.csproj
+COPY . .
+RUN dotnet publish -c Release -o /output --no-restore --nologo
