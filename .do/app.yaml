@@ -2,7 +2,7 @@ name: swimburger-blazor-wasm
 static_sites:
 - name: site
   github:
-    repo: Swimburger/BlazorWasmDigitalOcean
+    repo: rheer/BlazorWasmDigitalOcean
     branch: main
     deploy_on_push: true
   dockerfile_path: Dockerfile.build 
